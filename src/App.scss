@@ -1,0 +1,44 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    .main {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        .container{
+            padding: 5%;
+            padding-top: 0%;
+            width: 100%;
+            height: 310px;
+            overflow-y: scroll;
+        }
+    }
+    .particles {
+        position: absolute;
+        z-index: -1000;
+    }
+}
+
+
+
+.pages-enter {
+    opacity: 0;
+}
+
+.pages-enter-active {
+    opacity: 0;
+    transition: opacity 400ms;
+    transition-delay: 600ms;
+}
+
+.pages-exit{
+    opacity: 0;
+}
+
+.pages-exit-active {
+    opacity: 0;
+    transition: opacity 400ms;
+}

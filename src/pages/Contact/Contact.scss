@@ -1,0 +1,61 @@
+.contact-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    padding-top: 25px;
+    p, h1{
+        margin: 0%;
+        margin-bottom: 3%;
+    }
+    .contact {
+        width: 50%;
+        .details{
+            margin-bottom: 20px;
+            input {
+                width: 47%;
+                height: 30px;
+                font-family: 'monofonto';
+                outline: none;
+                background: transparent;
+                border: none;
+                border-bottom: #e1ad01 solid 2px;
+            }
+            input[type=name] {
+                margin-right: 10px;
+            }
+        }
+        .description {
+            display: flex;
+            flex-direction: column;
+            input{
+                width: 97.4%;
+                height: 30px;
+                background: transparent;
+                font-family: 'monofonto';
+                border: none;
+                border-bottom: #e1ad01 solid 2px;
+                outline: none;
+            }
+            #message {
+                height: 100px;
+                width: 97.4%;
+                margin-top: 20px;
+                text-align: left;
+                background: transparent;
+                font-family: 'monofonto';
+                border: none;
+                border-bottom: #e1ad01 solid 2px;
+                outline: none;
+                  
+            }
+        }
+    }
+    .info {
+        margin-left: 100px;
+        line-height: 30px;
+        p{
+            font-weight: 100;
+        }
+    }
+}

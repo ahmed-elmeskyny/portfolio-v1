@@ -1,0 +1,52 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 80%;
+    .about {
+        display: flex;
+        padding-bottom: 6%;
+        .about-text {
+            width: 50%;
+        }
+        .picture-container {
+            width: 50%;
+            .picture {
+                margin-left: 150px;
+                margin-bottom: 50px;
+                background-image: url("../../assets/pdp4.jpeg");
+                background-size: cover;
+                background-position: center;
+                width: 200px;
+                height: 200px;
+                border-radius: 100px;
+            }
+        }
+    }
+    .scroll {
+        text-align: center;
+        padding-bottom: 10%;
+        margin-right: 30px;
+    }
+    .education {
+        padding-bottom: 14%;
+        margin-top: 20px;
+        h2 {
+            margin: 0;
+            margin-bottom: 5%;
+        }
+    }
+    .experience { 
+        padding-bottom: 5%;
+        margin-top: 20px;
+        h2 {
+            margin: 0;
+            margin-bottom: 5%;
+        }
+    }
+    
+}
+
+
+
+

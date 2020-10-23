@@ -1,3 +1,12 @@
+@font-face {
+  src: url("./fonts/Snowballs\ City_PersonalUseOnly.ttf");
+  font-family: 'snowballs';
+}
+
+@font-face {
+  src: url("./fonts/monofonto.ttf");
+  font-family: "monofonto";
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +14,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'monofonto';
+  // height: 100vh;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 
 code {

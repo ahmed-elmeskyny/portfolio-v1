@@ -1,0 +1,25 @@
+.header {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-top: 1%;
+    height: 50px;
+    p{  
+        margin: 0;
+        font-family: "snowballs";
+        font-size: 50px;
+        color:#e1ad01 ;
+    }
+    .music{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        span {
+            margin-left: 7px;
+        }
+    }
+}

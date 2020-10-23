@@ -1,0 +1,26 @@
+.home-container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 80%;
+    margin-top: 5%;
+    .title {
+        width: 60%;
+        span{
+        font-family: 'snowballs';
+        font-weight: 100;
+        font-size: 72px;
+        color:#e1ad01 ;
+        }
+    }
+    .svg-container { 
+         width: 50%;
+        .svg {
+        margin-left: 100px;
+        border-radius: 20px;
+        font-size: 250px;
+        color: #e1ad01;
+    }
+}
+}

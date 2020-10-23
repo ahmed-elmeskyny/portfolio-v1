@@ -1,0 +1,42 @@
+.item-container {
+    font-size: 11px;
+    width: 300px;
+    height: 100px;
+    border-bottom:#e1ad01 solid 2px;
+    .item {
+        padding-right: 10px;
+        padding-left: 8px;
+        
+        .title{
+            text-transform: uppercase;
+            height: 36px;
+            margin: 0;
+        }
+        .date {
+            height: 36px;
+            margin:0;
+            margin-top: 5px;
+        }
+        .description {
+            height: 36px;
+            margin: 0;
+            margin-top: -5px;
+        }
+    }
+    .circle {
+        padding: 1px 5px;
+        color: white;
+        background-color: white;
+        border: #e1ad01 solid 2px;
+        border-radius: 20px;
+        position: relative;
+        top: -15px;
+        left: -10px;
+        cursor: pointer;
+    }
+    .circle:hover{
+        background-color: #e1ad01;
+        color: #e1ad01;
+    }
+
+}

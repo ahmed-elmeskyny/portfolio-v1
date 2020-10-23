@@ -1,0 +1,30 @@
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+    h2 {
+        margin: 0;
+    }
+    .skills {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        // margin: 5px 15px;
+        h3 {
+            font-weight: 200;
+        }
+        .web{
+            width: 330px;
+            height: 310px;
+        }
+        .programming {
+            width: 330px;
+            height: 310px;
+        }
+        .design {
+            width: 330px;
+            height: 310px;
+        }
+    }
+}

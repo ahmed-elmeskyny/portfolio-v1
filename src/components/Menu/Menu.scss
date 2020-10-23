@@ -1,0 +1,83 @@
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        li {
+            padding: 5px 10px; 
+            margin: 5px 25px;
+            margin-bottom: 10px;
+            width: 30px;
+            cursor: pointer;
+            .link {
+                color: black;
+                text-decoration: none;
+            }
+            .link:hover {
+                text-decoration: line-through #e1ad01;
+            }
+
+        .is-active-home::after{
+            content: "aa"; 
+            position: relative;
+            bottom: -15px;
+            left: -20px;
+            font-size: 6px;
+            color: #e1ad01;
+            padding: 1px;
+            border-radius: 15px;
+            background-color:#e1ad01;
+        }
+
+        .is-active-about::after{
+            content: "aa"; 
+            position: relative;
+            bottom: -15px;
+            left: -25px;
+            font-size: 6px;
+            color: #e1ad01;
+            padding: 1px;
+            border-radius: 15px;
+            background-color:#e1ad01;
+
+        }
+        .is-active-skills::after {
+            content: "aa"; 
+            position: relative;
+            bottom: -15px;
+            left: -30px;
+            font-size: 6px;
+            color: #e1ad01;
+            padding: 1px;
+            border-radius: 15px;
+            background-color:#e1ad01;
+        }
+        .is-active-projects::after {
+            content: "aa"; 
+            position: relative;
+            bottom: -15px;
+            left: -40px;
+            font-size: 6px;
+            color: #e1ad01;
+            padding: 1px;
+            border-radius: 15px;
+            background-color:#e1ad01;
+        }
+        .is-active-contact::after {
+            content: "aa"; 
+            position: relative;
+            bottom: -15px;
+            left: -35px;
+            font-size: 6px;
+            color: #e1ad01;
+            padding: 1px;
+            border-radius: 15px;
+            background-color:#e1ad01;
+        }
+    }}
+}
