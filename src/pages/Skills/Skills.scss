@@ -3,28 +3,55 @@
     flex-direction: column;
     width: 100%;
     height: 80%;
+    @media ( min-width: 1400px){
+        justify-content: center;
+        margin-top: 50px;
+    }
     h2 {
         margin: 0;
+        @media (max-width:550px){
+            text-align: center;
+            margin-bottom: 2%;
+        }
+        @media ( min-width: 1400px){
+            font-size: 40px;
+        }
     }
     .skills {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        // margin: 5px 15px;
+        @media (max-width:550px){
+            justify-content: center;
+            margin-left:12%;
+        }
         h3 {
             font-weight: 200;
         }
         .web{
             width: 330px;
             height: 310px;
+            @media ( min-width: 1400px){
+                font-size: 20px;
+            }
         }
         .programming {
             width: 330px;
             height: 310px;
+            @media ( min-width: 1400px){
+                font-size: 20px;
+            }
         }
         .design {
             width: 330px;
             height: 310px;
+            @media ( min-width: 1400px){
+                font-size: 20px;
+            }
         }
+    }
+
+    @media (max-width:910px){
+        margin-top: 70px;
     }
 }

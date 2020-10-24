@@ -1,0 +1,25 @@
+.projects-container {
+    h1,p {
+        margin:0;
+        margin-bottom: 10px;
+        @media (max-width: 550px){
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        @media ( min-width: 1400px){
+          font-size: 40px;
+      }
+
+    }
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        @media (max-width: 550px){
+          margin: 0;
+        }
+    }
+    @media (max-width:910px){
+      margin: 50px;
+    }
+}

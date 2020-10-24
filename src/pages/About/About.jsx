@@ -23,13 +23,15 @@ const About = () => {
     let text = useRef(null);
     let picture = useRef(null);
     let scroll = useRef(null);
+    let educ = useRef(null);
+    let exp = useRef(null);
 
     useEffect(() => {
-        gsap.from([text, picture], 0.8, {
+        gsap.from([text, picture, scroll, educ, exp], 0.8, {
             delay: 0.1,
             opacity: 0,
             ease: "power1.out",
-            y: 64,
+            y: -64,
             stagger: {
                 amount: 0.4
             }
@@ -44,7 +46,7 @@ const About = () => {
                 <div className="about-text" ref={el => text = el}>
                     <h1>About me</h1>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas dolores animi pariatur dolorem maiores eveniet voluptatum sequi ratione magnam ab cumque, aut, quibusdam placeat maxime quo alias architecto at harum.</p>
-                    <CusttomButton isLink pdf={Ahmed}> Resume </CusttomButton>
+                    <CusttomButton className="button-container resume" isLink pdf={Ahmed}> Resume </CusttomButton>
                 </div>
                 <div className="picture-container" ref={el => picture = el}>
                     <div className="picture"></div>
@@ -53,11 +55,11 @@ const About = () => {
             <div className='scroll' ref={el => scroll = el}>
                 <BsCaretDownFill></BsCaretDownFill>
             </div>
-            <div className="education">
+            <div className="education" ref={el => educ = el}>
                 <h2>#Education</h2>
                 <TimeLine education></TimeLine>
             </div>
-            <div className="experience">
+            <div className="experience" ref={el => exp = el} >
                 <h2>#Experience</h2>
                 <TimeLine ></TimeLine>
             </div>

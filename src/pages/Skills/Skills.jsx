@@ -42,7 +42,7 @@ const Skills = () => {
                     <ProgressBar title="Redux" width="45%"></ProgressBar>
                 </div>
                 <div className="programming" ref={el => programming = el}>
-                    <h3>- porgramming and databases</h3>
+                    <h3>- porgramming & db</h3>
                     <ProgressBar title="C++" width="30%"></ProgressBar>
                     <ProgressBar title="Java" width="10%"></ProgressBar>
                     <ProgressBar title="firebase" width="30%"></ProgressBar>

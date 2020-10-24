@@ -4,6 +4,7 @@ import "./Header.scss";
 //icons
 import { FaPlay } from "react-icons/fa";
 import { BsFillPauseFill } from "react-icons/bs";
+import { RiMenu4Fill } from "react-icons/ri"
 
 //components 
 import Wave from "../../assets/Music/music"
@@ -15,17 +16,24 @@ import lofi from "../../assets/lofii.mp3"
 //Sound library
 import { Howl } from "howler"
 
+//redux
+import { connect } from "react-redux";
+import toggle from "../../redux/mobile-reducer/mobile-action";
+
 const sound = new Howl({
     src: [lofi],
     loop: true,
     volume: 0.3,
 });
 
-const Header = () => {
+const Header = ({ toggle }) => {
     const [play, setPlay] = useState(false);
     return (
         <div className="header">
-            <p>Ae</p>
+            <div className="logo">
+                <RiMenu4Fill className="menu-icon" onClick={() => toggle()}></RiMenu4Fill>
+                <p>Ae</p>
+            </div>
             <div className="music">
                 {play ? <BsFillPauseFill
                     style={{ fontSize: "25px", marginBottom: "5px" }}
@@ -43,4 +51,8 @@ const Header = () => {
     )
 }
 
-export default Header;
+const mapDispatchToProps = (dispatch) => ({
+    toggle: () => dispatch(toggle()),
+})
+
+export default connect(null, mapDispatchToProps)(Header);

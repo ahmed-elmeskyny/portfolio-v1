@@ -10,6 +10,7 @@ import About from "./pages/About/About";
 import Skills from "./pages/Skills/Skills";
 import Projects from "./pages/Projects/Projects";
 import Contact from "./pages/Contact/Contact";
+import MobileMenu from "./pages/mobile-menu/mobile-menu"
 
 //React Router 
 import { BrowserRouter as Router, Switch, Route, withRouter } from "react-router-dom";
@@ -20,11 +21,12 @@ import ParticleContainer from "./assets/Particles/Particles-container";
 
 
 
-function App(props) {
+function App() {
   return (
     <Router>
       <div className="App">
         <ParticleContainer style={{ position: "absolute", top: "0", right: "0", width: "100%", height: "100%" }}></ParticleContainer>
+        <MobileMenu></MobileMenu>
         <Header></Header>
         <div className="main"  >
           <Social></Social>

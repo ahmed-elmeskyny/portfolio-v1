@@ -7,11 +7,18 @@
     p, h1{
         margin: 0%;
         margin-bottom: 3%;
+        @media ( min-width: 1400px){
+            font-size: 25px;
+        }
     }
     .contact {
         width: 50%;
+        @media (max-width:550px){
+            width: 400px;
+        }
         .details{
             margin-bottom: 20px;
+            display: flex;
             input {
                 width: 47%;
                 height: 30px;
@@ -20,6 +27,9 @@
                 background: transparent;
                 border: none;
                 border-bottom: #e1ad01 solid 2px;
+                @media ( min-width: 1400px){
+                    font-size: 20px;
+                }
             }
             input[type=name] {
                 margin-right: 10px;
@@ -36,6 +46,9 @@
                 border: none;
                 border-bottom: #e1ad01 solid 2px;
                 outline: none;
+                @media ( min-width: 1400px){
+                    font-size: 20px;
+                }
             }
             #message {
                 height: 100px;
@@ -47,6 +60,9 @@
                 border: none;
                 border-bottom: #e1ad01 solid 2px;
                 outline: none;
+                @media ( min-width: 1400px){
+                    font-size: 20px;
+                }
                   
             }
         }
@@ -57,5 +73,16 @@
         p{
             font-weight: 100;
         }
+        @media (max-width: 910px){
+            margin:0;
+            margin-top: 50px;
+            margin-left: 15px;
+        }
+    }
+    @media ( max-width:910px) {
+        margin-top: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 }

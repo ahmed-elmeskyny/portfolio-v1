@@ -11,6 +11,10 @@
         padding: 10px;
         cursor: pointer;
         font-size: 20px;
+        @media (min-width:1400px){
+            font-size: 30px;
+            margin-right: 5px;
+        }
     }
     .github:hover:after {
         content: "github";
@@ -62,6 +66,9 @@
         font-weight: 300;
         padding: 1px 4px;
         border-radius: 10px;
+    }
+    @media ( max-width:910px) {
+        display: none;
     }
     
 }
