@@ -4,6 +4,9 @@ import "./Contact.scss";
 //animation 
 import { gsap } from "gsap";
 
+//components
+import CusttomButton from "../../components/CusttomButton/Custtom-button"
+
 class Contact extends React.Component {
     constructor() {
         super();
@@ -35,6 +38,7 @@ class Contact extends React.Component {
                             <input type="text" placeholder="Subject" required></input>
                             <textarea id="message" name="message" placeholder="message"></textarea>
                         </div>
+                        <CusttomButton className="button-container resume" style={{ margin: "0", marginTop: "10px" }}> Send </CusttomButton>
                     </form>
                 </div>
                 <div className="info">

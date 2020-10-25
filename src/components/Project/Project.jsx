@@ -6,7 +6,7 @@ import { withRouter } from "react-router-dom"
 import { gsap } from "gsap"
 
 
-const Project = ({ history, img, h4, span, }) => {
+const Project = ({ match, history, img, title, subtitle, projectId }) => {
 
     let proj = useRef(null);
 
@@ -25,13 +25,13 @@ const Project = ({ history, img, h4, span, }) => {
     }, [proj])
 
     return (
-        <div className="project-container" onClick={() => history.push("/hats")} ref={el => proj = el}>
+        <div className="project-container" onClick={() => history.push(`${match.url}/${projectId}`)} ref={el => proj = el}>
             <div className="project-img">
                 <img src={img} width="100%" height="100%"></img>
             </div>
             <div className="titles">
-                <h4>{h4}</h4>
-                <span>{span}</span>
+                <h4>{title}</h4>
+                <span>{subtitle}</span>
             </div>
         </div>
     )

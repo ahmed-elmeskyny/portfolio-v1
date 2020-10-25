@@ -5,11 +5,15 @@ import "./Custtom-button.scss";
 import { FaFileImport } from "react-icons/fa";
 
 
-const CusttomButton = ({ isLink, pdf, children, ...otherProps }) => {
+const CusttomButton = ({ isLink, href, children, isDownload, ...otherProps }) => {
     return (
         <div  {...otherProps}>
             { isLink ?
-                <button><FaFileImport style={{ fontSize: "20px" }}></FaFileImport><a className="link" href={pdf} download="photo"> {children}</a></button> :
+                <button>{isDownload ?
+                    <FaFileImport style={{ fontSize: "20px" }}></FaFileImport> : null}
+                    <a className="link" href={href} target="_blank">
+                        {children}</a>
+                </button> :
                 <button>{children}</button>}
         </div>
     )

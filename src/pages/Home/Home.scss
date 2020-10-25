@@ -33,7 +33,7 @@
         border-radius: 20px;
         font-size: 250px;
         color: #e1ad01;
-        @media ( max-width:910px) {
+        @media ( max-width:930px) {
             margin-left: 5%;
         }
         @media ( max-width: 550px){
@@ -46,7 +46,7 @@
          }
     }
 }
-@media ( max-width:910px) {
+@media ( max-width:930px) {
 flex-wrap: wrap-reverse;
 margin-top: 100px;
 }
@@ -64,7 +64,7 @@ margin-top: 100px;
     margin-top: 15%;
     margin-right: 10%;
     justify-content: space-evenly;
-    @media (max-width: 910px){
+    @media (max-width: 930px){
         display: flex;
     }
 }

@@ -53,6 +53,7 @@ const Skills = () => {
                     <h3>- design</h3>
                     <ProgressBar title="photoshop" width="20%"></ProgressBar>
                     <ProgressBar title="Figma" width="40%"></ProgressBar>
+                    <ProgressBar title="git/github" width="70%"></ProgressBar>
                 </div>
             </div>
         </div>

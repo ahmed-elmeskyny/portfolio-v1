@@ -11,22 +11,35 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
+  
     .menu-icon {
         display: none;
         font-size: 25px;
           margin: 10px; 
           margin-right: 15px;
-         @media (max-width:910px) {
+         @media (max-width:930px) {
              display: block;
          }
+    }  }
+.musica {
+    height: 50px;
+    padding: 0px 10px;
+    background-color: lightgray;
+    box-shadow: 2px 2px 3px lightgray;
+    margin-left: 75%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width:930px) {
+        margin-left: 55%;
     }
-    p{  
-        margin: 0;
-        font-family: "snowballs";
-        font-size: 50px;
-        color:#e1ad01 ;
+    @media (min-width:1400px){
+        margin-left: 80%;}
+     @media ( max-width: 550px){
+        display: none;
     }
+}
     .music{
         display: flex;
         justify-content: center;
@@ -36,7 +49,7 @@
             margin-left: 7px;
         }
     }
-    @media ( max-width:910px) {
+    @media ( max-width:930px) {
         position: fixed;
         top: 0;
         left: 0;

@@ -6,8 +6,7 @@ import CusttomButton from "../../components/CusttomButton/Custtom-button"
 import TimeLine from "../../components/Time-line/Time-line"
 
 
-//assets
-import Ahmed from "../../assets/pdp3.jpeg";
+
 
 //react-icons 
 import { BsCaretDownFill } from "react-icons/bs"
@@ -46,7 +45,7 @@ const About = () => {
                 <div className="about-text" ref={el => text = el}>
                     <h1>About me</h1>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas dolores animi pariatur dolorem maiores eveniet voluptatum sequi ratione magnam ab cumque, aut, quibusdam placeat maxime quo alias architecto at harum.</p>
-                    <CusttomButton className="button-container resume" isLink pdf={Ahmed}> Download CV </CusttomButton>
+                    <CusttomButton className="button-container resume" isLink> Download CV </CusttomButton>
                 </div>
                 <div className="picture-container" ref={el => picture = el}>
                     <div className="picture"></div>
