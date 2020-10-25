@@ -5,6 +5,7 @@ import "./Header.scss";
 import { FaPlay } from "react-icons/fa";
 import { BsFillPauseFill } from "react-icons/bs";
 import { RiMenu4Fill } from "react-icons/ri"
+import { GiBeard } from "react-icons/gi"
 
 //components 
 import Wave from "../../assets/Music/music"
@@ -32,7 +33,7 @@ const Header = ({ toggle }) => {
         <div className="header">
             <div className="logo">
                 <RiMenu4Fill className="menu-icon" onClick={() => toggle()}></RiMenu4Fill>
-                <p>Ae</p>
+                <GiBeard style={{ fontSize: "40px", color: "#e1ad01" }}></GiBeard>
             </div>
             <div className="music">
                 {play ? <BsFillPauseFill

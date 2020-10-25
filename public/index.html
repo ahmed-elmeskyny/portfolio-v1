@@ -24,21 +24,79 @@
     -->
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
   <title>Ahmed Elmeskyny</title>
+  <style>
+    .preloader {
+      display: none;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 3000;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    #preloader {
+      height: 100%;
+      width: 100%;
+    }
+
+
+
+    .ripple {
+      fill: transparent;
+      stroke: #e1ad01;
+      stroke-width: 5px;
+      transform-origin: 50% 50%;
+      animation: 2s ease-out 0s infinite ripple-out;
+    }
+
+    .ripple2 {
+      animation-delay: 1s;
+    }
+
+    .ripple3 {
+      animation-delay: 1.6s;
+    }
+
+    @keyframes ripple-out {
+      0% {
+        r: 0px;
+        opacity: 1.0;
+      }
+
+      100% {
+        r: 80px;
+        opacity: 0.0;
+      }
+    }
+
+    @media only screen and (max-width:550px) {
+      .circle {
+        margin-left: 0;
+      }
+  </style>
 </head>
 
 <body>
+  <div class="preloader">
+    <div>
+      <div id="preloader">
+        <svg class="circle" viewbox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+          <circle class="ripple" cx="80" cy="80" r="20"></circle>
+          <circle class="ripple ripple2" cx="80" cy="80" r="40"></circle>
+        </svg>
+      </div>
+      <p>Greetings!!</p>
+      <p>Ahmed El Meskyny</p>
+      <span>Web developer - software engineering student</span>
+    </div>
+  </div>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
-  <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
 </body>
 
 </html>

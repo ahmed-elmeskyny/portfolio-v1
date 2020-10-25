@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./mobile-menu.scss";
 
 //react-icons
@@ -11,10 +11,12 @@ import { NavLink } from "react-router-dom";
 import { connect } from "react-redux";
 import toggle from "../../redux/mobile-reducer/mobile-action";
 
+//animation
+import { gsap } from "gsap";
 
 const MobileMenu = ({ open, toggle }) => {
 
-    return open ? <div className="mobile-menu">
+    return open ? (<div className="mobile-menu" >
         <div className="close-icon" onClick={() => toggle()} >
             <AiOutlineClose></AiOutlineClose>
         </div>
@@ -27,9 +29,8 @@ const MobileMenu = ({ open, toggle }) => {
                 <li> <NavLink exact to="/contact" onClick={() => toggle()}  >Contact</NavLink></li>
             </ul>
         </div>
-    </div> : null
+    </div>) : (null)
 }
-
 
 
 const mapStateToProps = (state) => ({

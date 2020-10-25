@@ -8,6 +8,7 @@
         justify-content: center;
         list-style: none;
         padding: 0;
+        margin-right: 8%;
         @media (min-width:1400px){
             margin-right: 10%;
         }
@@ -17,6 +18,7 @@
             margin-bottom: 10px;
             width: 30px;
             cursor: pointer;
+            font-size: 20px;
             @media (min-width:1400px){
                 font-size: 30px;
                 margin: 5px 35px;
