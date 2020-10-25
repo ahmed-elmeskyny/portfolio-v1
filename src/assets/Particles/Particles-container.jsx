@@ -4,7 +4,7 @@ import Particles from "react-particles-js";
 
 const ParticleContainer = () => {
     return (
-        <Particles style={{ position: "absolute", top: "0", right: "0", width: "100%", height: "100%", zIndex: "-1000" }}
+        <Particles style={{ position: "fixed", top: "0", right: "0", width: "100vw", height: "100vh", zIndex: "-1000" }}
             params={{
                 particles: {
                     number: {

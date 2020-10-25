@@ -33,20 +33,14 @@ const sound = new Howl({
 
 const Header = ({ toggle }) => {
     const [play, setPlay] = useState(false);
-    const [isMusic, setMusic] = useState(true);
+
     return (
         <div className="header">
             <div className="logo">
                 <RiMenu4Fill className="menu-icon" onClick={() => toggle()}></RiMenu4Fill>
                 <NavLink to="/"><GiBeard style={{ fontSize: "40px", color: "#e1ad01" }}></GiBeard></NavLink>
             </div>
-            {isMusic ?
-                <div className="musica"><TiDelete style={{
-                    position: "relative", marginRight: "5px", cursor: "pointer"
-                }} onClick={() => setMusic(false)}>
-                </TiDelete><span>play some music!!
-                 </span></div>
-                : null}
+
             <div className="music">
                 {
                     play ? <BsFillPauseFill
