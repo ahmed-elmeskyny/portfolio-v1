@@ -47,10 +47,10 @@ const Home = () => {
                 </div>
             </div>
             <div className="social-mobile" ref={el => social = el}>
-                <div > <AiFillGithub></AiFillGithub></div>
-                <div ><GrLinkedinOption></GrLinkedinOption></div>
-                <div ><FaFacebookF></FaFacebookF></div>
-                <div ><AiOutlineInstagram></AiOutlineInstagram></div>
+                <div > <a href="https://github.com/ahmed-elmeskyny" target="_blank" style={{ color: "black" }} ><AiFillGithub></AiFillGithub> </a></div>
+                <div ><a href="https://www.linkedin.com/in/ahmed-el-b570041b5/" target="_blank" style={{ color: "black" }}  ><GrLinkedinOption></GrLinkedinOption></a></div>
+                <div ><a href="https://www.facebook.com/itsmeahmedelmeskyny/" target="_blank" style={{ color: "black" }} ><FaFacebookF></FaFacebookF></a></div>
+                <div ><a href="https://www.instagram.com/ahmed_e_l/" target="_blank" style={{ color: "black" }}  ><AiOutlineInstagram></AiOutlineInstagram></a></div>
             </div>
         </div >
     )
