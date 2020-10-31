@@ -38,7 +38,7 @@ const Home = () => {
             <div className="home-container">
                 <div className="title" ref={el => title = el}>
                     <h1>Hi , I'm <span>Ahmed El Meskyny</span> , a web developer and a sowftware engineering student </h1>
-                    <p>Front end and Back end developer</p>
+                    <p>Frontend and Backend developer</p>
                 </div>
                 <div className="svg-container" ref={el => svg = el}>
                     <div className="svg">

@@ -32,7 +32,6 @@ class App extends React.Component {
   componentDidMount() {
     this.fakeRequest().then(() => {
       const loader = document.querySelector(".preloader");
-      console.log(loader)
       if (loader) {
         loader.remove();
         this.props.toggleActive();
