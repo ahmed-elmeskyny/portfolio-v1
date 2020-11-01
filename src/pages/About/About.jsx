@@ -8,6 +8,9 @@ import TimeLine from "../../components/Time-line/Time-line"
 //assets
 import ahmed from "../../assets/Ahmed's Resume.pdf"
 
+//react-router
+import {NavLink} from "react-router-dom"
+
 
 
 //react-icons 
@@ -46,7 +49,10 @@ const About = () => {
             <div className="about">
                 <div className="about-text" ref={el => text = el}>
                     <h1>About me</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas dolores animi pariatur dolorem maiores eveniet voluptatum sequi ratione magnam ab cumque, aut, quibusdam placeat maxime quo alias architecto at harum.</p>
+                    <p>Hi , i'am ahmed  👋 a  freelance full stack web developer based in morocco and a software engineering student at ENSAO .  Powered by Figma, VS Code and coffee
+                       i enjoy building everything from small business sites to rich interactive web apps . Here some of my <NavLink style={{ textDecoration:"none", color:"#e1ad01"}} exact to="/projects">Work</NavLink> ,
+                       you can get in touch with me <NavLink style={{ textDecoration:"none", color:"#e1ad01"}} exact to='/contact'>Here</NavLink>
+                    </p>
                     <CusttomButton href={ahmed} className="button-container resume" isLink isDownload> Download CV </CusttomButton>
                 </div>
                 <div className="picture-container" ref={el => picture = el}>
