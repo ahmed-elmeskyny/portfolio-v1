@@ -11,7 +11,7 @@ const TimeLine = ({ education }) => {
         <div className="time-line-container">
             { education ? (<>
                 <Item
-                    title="baccalaureate in physiques sciences - exellent"
+                    title="baccalaureate in physiques sciences - excellent"
                     date="2019"
                     description="Zineb Ennafzaouia high school , oujda">
 
