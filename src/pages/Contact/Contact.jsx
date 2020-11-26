@@ -28,7 +28,7 @@ class Contact extends React.Component {
             <div className="contact-container">
                 <div className="contact" >
                     <h1>Contact me</h1>
-                    <p>I am interested in freelance opportunities - small projects or big projects - don't hesitate to contact me</p>
+                    <p>I am interested in freelance opportunities - small projects or big projects - don't hesitate to contact me<p>(better send email at ahmedelmeskyny@gmail.com)</p></p>
                     <form>
                         <div className="details">
                             <input type="name" placeholder="name" required></input>

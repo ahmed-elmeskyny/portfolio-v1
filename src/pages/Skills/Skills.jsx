@@ -27,7 +27,6 @@ const Skills = () => {
 
     }
 
-
         , [web, programming, design])
     return (
         <div className="skills-container">
@@ -43,7 +42,7 @@ const Skills = () => {
                 </div>
                 <div className="programming" ref={el => programming = el}>
                     <h3>- porgramming & db</h3>
-                    <ProgressBar title="C++" width="30%"></ProgressBar>
+                    <ProgressBar title="C/C++" width="30%"></ProgressBar>
                     <ProgressBar title="Java" width="10%"></ProgressBar>
                     <ProgressBar title="firebase" width="30%"></ProgressBar>
                     <ProgressBar title="MYSQL" width="10%"></ProgressBar>

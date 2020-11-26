@@ -1,5 +1,5 @@
 import para from "../assets/projects/para3.JPG";
-import todo from "../assets/projects/todo.JPG";
+import todo from "../assets/projects/todo.png";
 import crown from "../assets/projects/crown.JPG";
 import portfolio from '../assets/projects/portfolio.png';
 
