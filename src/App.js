@@ -15,7 +15,7 @@ import ProjectDescription from "./pages/project-description/project-description"
 
 
 //React Router 
-import { BrowserRouter as Router, Switch, Route, withRouter } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 //particle
 import ParticleContainer from "./assets/Particles/Particles-container";

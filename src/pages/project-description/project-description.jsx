@@ -17,7 +17,7 @@ import { gsap } from "gsap"
 import { filtredProjects } from "../../utils/projects";
 import { connect } from "react-redux";
 
-const ProjectDescription = ({ history, project, match }) => {
+const ProjectDescription = ({ history, project}) => {
 
     let image = useRef(null);
     let text = useRef(null);
