@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import "./Home.scss";
 
 //react-icons
-import { GiBeard } from "react-icons/gi";
+import peep from "../../assets/drawing.png";
 import { AiFillGithub } from "react-icons/ai";
 import { GrLinkedinOption } from "react-icons/gr";
 import { FaFacebookF } from "react-icons/fa";
@@ -41,9 +41,9 @@ const Home = () => {
                     <p>Frontend and Backend developer</p>
                 </div>
                 <div className="svg-container" ref={el => svg = el}>
-                    <div className="svg">
-                        <GiBeard></GiBeard>
-                    </div>
+                    {/* <div className="svg"> */}
+                        <img src={peep} />
+                    {/* </div> */}
                 </div>
             </div>
             <div className="social-mobile" ref={el => social = el}>
