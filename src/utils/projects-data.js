@@ -2,6 +2,7 @@ import para from "../assets/projects/para3.JPG";
 import todo from "../assets/projects/todo.png";
 import crown from "../assets/projects/crown.JPG";
 import portfolio from '../assets/projects/portfolio.png';
+import alensao from "../assets/projects/alensao.png";
 
 
 
@@ -51,6 +52,17 @@ const Projects = [
         tools: "javascript Framework: React.js - redux/react-redux - firebase - gsap",
         href: "https://github.com/ahmed-elmeskyny/portfolio-v1",
         hrefCode: "https://github.com/ahmed-elmeskyny/portfolio-v1",
+    },
+    {
+        id: 5,
+        projectId: "ALENSAO",
+        title: "Alensao",
+        subtitle: "website for ALENSAO",
+        img: alensao,
+        description: " built and launched a dynamic website with user authentication  for  alensao (association of laureates of the national school of applied sciences) to be the portal between students and laureates of ENSAO ( National School Of Applied Sciences) ",
+        tools: "javascript Framework: Next.js - redux/react-redux - firebase",
+        href: "https://alensao.com/",
+        hrefCode: "https://github.com/ahmed-elmeskyny/alensao-v2",
     }
 ]
 
