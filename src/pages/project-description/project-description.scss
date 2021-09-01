@@ -1,50 +1,51 @@
 .el-container {
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 930px) {
+    margin-top: 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  @media (min-width: 1400px) {
+    font-size: 30px;
+  }
+  .project-description-container {
     display: flex;
-    flex-direction: column;
-    @media (max-width:930px){
-        margin-top: 40px;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        justify-content: space-evenly;
+    flex-direction: row-reverse;
+    height: 90%;
+    @media (max-width: 930px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-top: 60px;
     }
-    @media (min-width:1400px) {
-        font-size: 30px;
+    .project-image {
+      width: 70%;
 
+      margin-left: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: violet;
+      @media (max-width: 930px) {
+        width: 350px;
+        padding: 0;
+      }
     }
-    .project-description-container {
+    .project-description {
+      width: 50%;
+      @media (max-width: 930px) {
+        width: 350px;
+        margin-top: 60px;
+      }
+      .button {
         display: flex;
-        flex-direction: row-reverse;
-        height: 90%;
-        @media (max-width:930px){
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            margin-top: 60px;
+        margin-top: 30px;
+        a {
+          margin: 0;
         }
-        .project-image {
-            width: 50%;
-            padding-left: 100px;
-            padding-top: 30px;
-            @media (max-width:930px){
-                width: 350px;
-                padding: 0;
-            }
-        }
-        .project-description {
-            width: 50%;
-            @media (max-width:930px){
-                width: 350px;
-                margin-top: 60px;
-            }
-            .button {
-                display: flex;
-                margin-top: 30px;
-                a {
-                    margin: 0;
-                }
-            }
-        }
-        
+      }
     }
+  }
 }
