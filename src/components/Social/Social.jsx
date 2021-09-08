@@ -23,7 +23,7 @@ const Social = () => {
       </div>
       <div className="social-icon linkdn">
         <a
-          href="www.linkedin.com/in/ahmed-el-meskyny-b570041b5"
+          href="https://www.linkedin.com/in/ahmed-el-meskyny-b570041b5"
           target="_blank"
           style={{ color: "black" }}
         >
