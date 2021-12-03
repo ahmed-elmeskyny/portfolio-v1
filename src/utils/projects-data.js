@@ -3,19 +3,31 @@ import crown from "../assets/projects/crown.JPG";
 import portfolio from "../assets/projects/portfolio.png";
 import alensao from "../assets/projects/alensao.png";
 import forum from "../assets/projects/forum.png";
+import sniper from "../assets/projects/sniperstudio.png";
+import pogo from "../assets/projects/pogo.png";
 
 const Projects = [
   {
-    id: 1,
-    projectId: "parapharmacie",
-    title: "Parapharmacie",
-    subtitle: "website for parapharmacie",
-    img: para,
-    description:
-      " a Parapharmacie website a static website  for product showcase  ",
-    tools: " Html - css - javascript",
-    href: "https://ahmed-elmeskyny.github.io/",
-    hrefCode: "https://github.com/ahmed-elmeskyny/ahmed-elmeskyny.github.io",
+    id: 7,
+    projectId: "POGO",
+    title: "pogo",
+    subtitle: "website for a electrique scooter renting company",
+    img: pogo,
+    description: "",
+    tools: "javascript Framework: Next.js - react-icons ",
+    href: "",
+    hrefCode: "",
+  },
+  {
+    id: 6,
+    projectId: "SniperStudio",
+    title: "Sniper Studio",
+    subtitle: "website for a digital marketing agency",
+    img: sniper,
+    description: "",
+    tools: "javascript Framework: Next.js - react-icons ",
+    href: "",
+    hrefCode: "https://github.com/ahmed-elmeskyny/sniperstudio-V2",
   },
   {
     id: 2,
@@ -65,6 +77,18 @@ const Projects = [
     tools: "javascript Framework: Next.js - redux/react-redux - firebase",
     href: "https://alensao.com/",
     hrefCode: "https://github.com/ahmed-elmeskyny/alensao-v2",
+  },
+  {
+    id: 1,
+    projectId: "parapharmacie",
+    title: "Parapharmacie",
+    subtitle: "website for parapharmacie",
+    img: para,
+    description:
+      " a Parapharmacie website a static website  for product showcase  ",
+    tools: " Html - css - javascript",
+    href: "https://ahmed-elmeskyny.github.io/",
+    hrefCode: "https://github.com/ahmed-elmeskyny/ahmed-elmeskyny.github.io",
   },
 ];
 
