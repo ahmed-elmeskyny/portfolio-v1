@@ -6,6 +6,7 @@
   .about {
     display: flex;
     padding-bottom: 6%;
+    justify-content: space-around;
     @media (max-width: 500px) {
       flex-wrap: wrap-reverse;
       justify-content: center;
@@ -30,19 +31,19 @@
       .picture {
         margin-left: 150px;
         margin-bottom: 50px;
-        background-image: url("../../assets/ahmed.jpg");
+        background-image: url("../../assets/ahmed.jpeg");
         background-size: cover;
         background-position: center;
-        width: 200px;
-        height: 200px;
-        border-radius: 100px;
+        width: 350px;
+        height: 350px;
+        border-radius: 50px;
         @media (max-width: 550px) {
           margin: 0;
         }
         @media (min-width: 1400px) {
           width: 400px;
           height: 400px;
-          border-radius: 200px;
+          border-radius: 50px;
           margin-top: 50px;
         }
       }

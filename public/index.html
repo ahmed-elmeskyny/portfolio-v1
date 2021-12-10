@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <link rel="icon" type="image/png" href="public/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Hi , i'am ahmed  👋 a  freelance full stack web developer based in morocco and a software engineering
-  i enjoy building everything from small business sites to rich interactive web apps... " />
-  <!--
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="public/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Hi , i'am ahmed  👋 a  freelance full stack web developer based in morocco and a software engineering
+  i enjoy building everything from small business sites to rich interactive web apps... "
+    />
+    <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <!--
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -22,77 +24,88 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
-  <title>Ahmed Elmeskyny || Web developer-software engineer</title>
-  <style>
-    .preloader {
-      display: none;
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      z-index: 3000;
-      background: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-
-    #preloader {
-      height: 100%;
-      width: 100%;
-    }
-
-    .ripple {
-      fill: transparent;
-      stroke: #e1ad01;
-      stroke-width: 5px;
-      transform-origin: 50% 50%;
-      animation: 2s ease-out 0s infinite ripple-out;
-    }
-
-    .ripple2 {
-      animation-delay: 1s;
-    }
-
-    .ripple3 {
-      animation-delay: 1.6s;
-    }
-
-    @keyframes ripple-out {
-      0% {
-        r: 0px;
-        opacity: 1.0;
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <title>
+      Ahmed Elmeskyny || Web developer - Data Science and Cloud Computing
+      engineer
+    </title>
+    <style>
+      .preloader {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 3000;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
       }
 
-      100% {
-        r: 80px;
-        opacity: 0.0;
+      #preloader {
+        height: 100%;
+        width: 100%;
       }
-    }
 
-    @media only screen and (max-width:550px) {
-      .circle {
-        margin-left: 0;
+      .ripple {
+        fill: transparent;
+        stroke: #e1ad01;
+        stroke-width: 5px;
+        transform-origin: 50% 50%;
+        animation: 2s ease-out 0s infinite ripple-out;
       }
-    }
-  </style>
-</head>
 
-<body>
-  <div class="preloader">
-    <div>
-    <div id="preloader">
-       <img src="https://s.svgbox.net/loaders.svg?ic=bars&fill=e1ad01" width="72" height="72">
+      .ripple2 {
+        animation-delay: 1s;
+      }
+
+      .ripple3 {
+        animation-delay: 1.6s;
+      }
+
+      @keyframes ripple-out {
+        0% {
+          r: 0px;
+          opacity: 1;
+        }
+
+        100% {
+          r: 80px;
+          opacity: 0;
+        }
+      }
+
+      @media only screen and (max-width: 550px) {
+        .circle {
+          margin-left: 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="preloader">
+      <div>
+        <div id="preloader">
+          <img
+            src="https://s.svgbox.net/loaders.svg?ic=bars&fill=e1ad01"
+            width="72"
+            height="72"
+          />
+        </div>
+        <p>Greetings!!</p>
+        <p>Ahmed El Meskyny</p>
+        <span
+          >Web developer - Data Science and Cloud Computing engineering
+          student</span
+        >
+      </div>
     </div>
-    <p>Greetings!!</p>
-    <p>Ahmed El Meskyny</p>
-    <span>Web developer - software engineering student</span>
-  </div>
-</div>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root"></div>
-
-</body>
-
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
 </html>
