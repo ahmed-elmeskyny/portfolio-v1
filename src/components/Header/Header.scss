@@ -1,27 +1,28 @@
 .header {
-    display: flex; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-top: 1%;
+  height: 50px;
+  .logo {
+    display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    margin-right: 2%;
-    margin-left: 2%;
-    margin-top: 1%;
-    height: 50px;
-    .logo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-  
+
     .menu-icon {
-        display: none;
-        font-size: 25px;
-          margin: 10px; 
-          margin-right: 15px;
-         @media (max-width:930px) {
-             display: block;
-         }
-    }  }
-.musica {
+      display: none;
+      font-size: 25px;
+      margin: 10px;
+      margin-right: 15px;
+      @media (max-width: 930px) {
+        display: block;
+      }
+    }
+  }
+  .musica {
     height: 50px;
     padding: 0px 10px;
     background-color: lightgray;
@@ -31,32 +32,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @media (max-width:930px) {
-        margin-left: 55%;
+    @media (max-width: 930px) {
+      margin-left: 55%;
     }
-    @media (min-width:1400px){
-        margin-left: 80%;}
-     @media ( max-width: 550px){
-        display: none;
+    @media (min-width: 1400px) {
+      margin-left: 80%;
     }
-}
-    .music{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        span {
-            margin-left: 7px;
-        }
+    @media (max-width: 550px) {
+      display: none;
     }
-    @media ( max-width:930px) {
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1000;
-        margin: 0%;
-        padding: 10px;
-        width: 95%;
-        background-color: white;
+  }
+  .music {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    span {
+      margin-left: 7px;
     }
+  }
+  @media (max-width: 930px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    margin: 0%;
+    padding: 10px;
+    width: 95%;
+    background-color: white;
+  }
 }

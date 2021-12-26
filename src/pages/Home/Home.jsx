@@ -45,7 +45,7 @@ const Home = () => {
         </div>
         <div className="svg-container" ref={(el) => (svg = el)}>
           {/* <div className="svg"> */}
-          <img src={peep} />
+          <img src={peep} width="300px" />
           {/* </div> */}
         </div>
       </div>
